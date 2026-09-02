@@ -7,54 +7,165 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <script src="./src/js/script.js" defer></script>
 </head>
 <body>
-        <!-- navbar -->
-         <nav class="navbar" id="navbar">
-            <div class="container nav-interno">
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="logo-nav">
                 <img src="./src/assets/img/logoMechanical 1.png" alt="Logotipo Mechanical Bromance">
-                <ul class="links-navbar">
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#portifolio">Portfólio</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                </ul> 
-            </div>
-         </nav>
+            </a>
+            <ul class="links-nav">
+               <li><a href="#servicos">Serviços</a></li> 
+               <li><a href="#sobre">Sobre</a></li> 
+               <li><a href="#portifolio">Serviços</a></li> 
+            </ul>
+         <div class="nav-botao">
+            <a href="#" class="botao-projeto-nav">Iniciar Projeto &rarr;</a>
+                 <span></span><span></span><span></span>   
+         </div>   
+        </div>
+    </nav>
 
-       <!-- banner -->
-        <section class="banner" id="banner">
-        <div class="banner-esquerda"> 
-        <h1>IDEIAS</h1> 
-        <h1>VIRAM</h1> 
-        <h1>PRODUTOS</h1> 
-        <h1>DIGITAIS</h1> 
-        <img src="./src/assets/img/mascote1.png" alt="MascoteBanner">
-        <p>Desenvolvemos sites, sistemas, jogos e experiências
-        digitais para empresas e criadores que buscam
-        excelência técnica e design de alto nível.</p>
-        <a href="#portifolio" class="btn-banner">Ver Portfólio</a>
-        <!-- testemunhos-->
-         <div class="testemunhos">
-            <div class="dados-item">
-            <div class="dados-num">50<span>+</span></div>
-            <div class="dados-texto">Projetos Entregues</div>
-            </div> 
-            <div class="dados-item">
-            <div class="dados-num">98<span>%</span></div>
-            <div class="dados-texto">Clientes Satisfeitos</div>
-            </div> 
-            <div class="dados-item">
-            <div class="dados-num">5<span>★</span></div>
-            <div class="dados-texto">Avaliação Média</div>
-            </div> 
-         </div>
-         </div>  
-         <!--Mascote-->
-         <div class="banner-direita">
-            <img id="mascoteBanner" src="./src/assets/img/mascote1.png" alt="Mascote Mechanical Bromance">
-         </div>
-         </section> 
+    <div class="nav-overlay" id="navOverlay" role="presentation"></div>
+        <nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
+         <a href="#svc" class="mobile-link">Serviços</a>
+         <a href="#sobre" class="mobile-link">Sobre</a>
+         <a href="#port" class="mobile-link">Portfólio</a>
+         <a href="#contato" class="btn btn-primary" style="margin-top:12px;">Iniciar Projeto</a>
+        </nav>
+        <!-- eu vou me matar as 23:99-->
+        <section id="hero">
+  <div class="bg-grid fade-out"></div>
+    <div class="container">
+    <div class="hero-wrap">
+
+        <h1 class="hero-h1" data-reveal data-reveal-delay="1">
+          Ideias
+          <span class="line2">Viram Produtos Digitais</span>
+        </h1>
+        <p class="hero-p" data-reveal data-reveal-delay="2">
+          Desenvolvemos sites, sistemas, jogos e experiências digitais para empresas e criadores que buscam excelência técnica e design de alto nível.
+        </p>
+        <div class="hero-cta" data-reveal data-reveal-delay="3">
+          <a href="#port" class="btn btn-primary">
+            Ver Portifólio
+          </a>
+        </div>
+        <div class="hero-stats" data-reveal data-reveal-delay="4">
+          <div class="stat-item">
+            <div class="stat-num">50<span>+</span></div>
+            <div class="stat-label">Projetos Entregues</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">98<span>%</span></div>
+            <div class="stat-label">Clientes Satisfeitos</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">5<span>+</span></div>
+            <div class="stat-label">Anos de Experiência</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT — mascot stage -->
+      <div class="hero-right" data-reveal data-reveal-delay="2">
+    <img src="./src/assets/img/mascote1.png" alt="Mascote do Departamento de Programação de Jogos Digitais">
+        <!-- COLOCAR FOTO DO MASCOTE-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVIÇOS ===== -->
+<section id="svc">
+  <div class="bg-grid fade-out"></div>
+  <div class="container">
+    <div class="section-head center" data-reveal>
+      <span class="subtitulo">O que fazemos</span>
+      <h2 class="section-titulo">Soluções Digitais<span class="c">Completas</span></h2>
+      <p class="section-subtitulo">Do conceito ao lançamento, entregamos produtos digitais que
+performam, encantam e escalam</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card" data-reveal>
+        <div class="svc-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--purple-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div class="svc-titulo">Desenvolvimento Web</div>
+        <div class="svc-desc">Sites e landing pages de alta performance, com design premium e otimização para conversão e SEO.</div>
+        <div class="svc-tags"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">TypeScript</span></div>
+      </div>
+
+      <div class="svc-card" data-reveal data-reveal-delay="1">
+        <div class="svc-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--purple-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m10 13-2 2 2 2M14 13l2 2-2 2"/></svg>
+        </div>
+        <div class="svc-titulo">Desemvolvimento de Jogos</div>
+        <div class="svc-desc">Jogos 2D e 3D para desktop, mobile e navegador. Experiências interativas únicas que engajam.</div>
+        <div class="svc-tags"><span class="tag">Node.js</span><span class="tag">ASP.NET</span><span class="tag">PostgreSQL</span></div>
+      </div>
+
+      <div class="svc-card" data-reveal data-reveal-delay="2">
+        <div class="svc-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--purple-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+        <div class="svc-titulo">Desenvolvimento Mobile</div>
+        <div class="svc-desc">Jogos 2D/3D, games mobile, experiências interativas e simulações com engines de ponta.</div>
+        <div class="svc-tags"><span class="tag">Unity</span><span class="tag">Godot</span><span class="tag">Unreal</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SOBRE ===== -->
+<section id="sobre">
+  <div class="bg-grid"></div>
+  <div class="container sobre-grid">
+
+      <div class="sobre-card-badge">
+        <div class="label">Projetos entregues</div>
+        <div class="valor">50+</div>
+      </div>
+    </div>
+
+    <div data-reveal data-reveal-delay="1">
+      <span class="subtitulo">Sobre Nós</span>
+      <h2 class="section-titulo">Onde Engenharia<br><span class="c">encontra criatividade</span></h2>
+      <p class="section-subtitulo">
+       Acreditamos que tecnologia deve ser bonita, funcional e divertida. Por isso, cada projeto que assumimos recebe atenção máxima aos detalhes, desde a arquitetura até o pixel perfeito na interface.
+      </p>
+      <div class="sobre-pillars">
+        <div class="pillar" data-reveal data-reveal-delay="2">
+          <div class="pillar-icon">⚙️</div>
+          <div class="pillar-titulo">Tecnologia Séria</div>
+          <div class="pillar-desc">Código limpo, arquitetura escalável e boas práticas em cada projeto.</div>
+        </div>
+        <div class="pillar" data-reveal data-reveal-delay="3">
+          <div class="pillar-icon">🎮</div>
+          <div class="pillar-titulo">Alma de Game Dev</div>
+          <div class="pillar-desc">Cada produto deve ser tão polido quanto um jogo bem acabado.</div>
+        </div>
+        <div class="pillar" data-reveal data-reveal-delay="2">
+          <div class="pillar-icon">🤝</div>
+          <div class="pillar-titulo">Parceria Real</div>
+          <div class="pillar-desc">Trabalhamos junto ao cliente, não apenas para o cliente.</div>
+        </div>
+        <div class="pillar" data-reveal data-reveal-delay="3">
+          <div class="pillar-icon">🚀</div>
+          <div class="pillar-titulo">Entrega que Importa</div>
+          <div class="pillar-desc">Focamos em resultados mensuráveis, não só em beleza visual.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 
 </body>
-</html>
+</html>  
