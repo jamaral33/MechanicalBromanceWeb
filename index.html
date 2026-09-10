@@ -1,431 +1,445 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mechanical Bromance</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/estilo.css">
-    <script src="./src/js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mechanical Bromance — Estúdio de Software</title>
+  <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-        <div class="container nav-inner">
-            <a href="#" class="logo-nav">
-                <img src="./src/assets/img/logoMechanical 1.png" alt="Logotipo Mechanical Bromance">
-            </a>
-            <ul class="links-nav">
-               <li><a href="#servicos">Serviços</a></li> 
-               <li><a href="#sobre">Sobre</a></li> 
-               <li><a href="#portifolio">Serviços</a></li> 
-            </ul>
-         <div class="nav-botao">
-            <a href="#" class="botao-projeto-nav">Iniciar Projeto &rarr;</a>
-                 <span></span><span></span><span></span>   
-         </div>   
-        </div>
+
+  <!-- ===================== CABEÇALHO ===================== -->
+  <header class="cabecalho">
+    <div class="container cabecalho__conteudo">
+      <a href="#topo" class="logo">
+        <img src="./src/assets/logoMechanical 1.png">
+      </a>
+
+      <nav class="navegacao" aria-label="Navegação principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+
+      <a href="#contato" class="botao botao--primario">Iniciar Projeto →</a>
+
+      <!-- Botão de menu para telas pequenas -->
+      <button class="menu-mobile" id="botaoMenuMobile" aria-expanded="false" aria-controls="navegacaoMobile" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Menu mobile (escondido por padrão, controlado via JS) -->
+    <nav id="navegacaoMobile" class="navegacao-mobile" aria-label="Navegação mobile">
+      <a href="#servicos">Serviços</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato" class="botao botao--primario">Iniciar Projeto →</a>
     </nav>
+  </header>
 
-    <div class="nav-overlay" id="navOverlay" role="presentation"></div>
-        <nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
-         <a href="#svc" class="mobile-link">Serviços</a>
-         <a href="#sobre" class="mobile-link">Sobre</a>
-         <a href="#port" class="mobile-link">Portfólio</a>
-         <a href="#contato" class="btn btn-primary" style="margin-top:12px;">Iniciar Projeto</a>
-        </nav>
-        <!-- eu vou me matar as 23:99-->
-        <section id="hero">
-  <div class="bg-grid fade-out"></div>
-    <div class="container">
-    <div class="hero-wrap">
+  <main id="topo">
 
-        <h1 class="hero-h1" data-reveal data-reveal-delay="1">
-          Ideias
-          <span class="line2">Viram Produtos Digitais</span>
-        </h1>
-        <p class="hero-p" data-reveal data-reveal-delay="2">
-          Desenvolvemos sites, sistemas, jogos e experiências digitais para empresas e criadores que buscam excelência técnica e design de alto nível.
-        </p>
-        <div class="hero-cta" data-reveal data-reveal-delay="3">
-          <a href="#port" class="btn btn-primary">
-            Ver Portifólio
-          </a>
-        </div>
-        <div class="hero-stats" data-reveal data-reveal-delay="4">
-          <div class="stat-item">
-            <div class="stat-num">50<span>+</span></div>
-            <div class="stat-label">Projetos Entregues</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-num">98<span>%</span></div>
-            <div class="stat-label">Clientes Satisfeitos</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-num">5<span>+</span></div>
-            <div class="stat-label">Anos de Experiência</div>
-          </div>
-        </div>
-      </div>
+    <!-- ===================== BODY ===================== -->
+    <section class="hero">
+      <div class="container hero__conteudo">
+        <div class="hero__texto">
+          <span class="etiqueta">Estúdio de Software</span>
+          <h1 class="hero__titulo">
+            Ideias viram <span class="destaque">produtos digitais</span>
+          </h1>
+          <p class="hero__descricao">
+            Desenvolvemos sites, sistemas, jogos e experiências digitais para
+            empresas e criadores que buscam excelência técnica e design de
+            alto nível.
+          </p>
+          <a href="#portfolio" class="botao botao--primario botao--grande">Ver Portfólio</a>
 
-      <!-- RIGHT — mascot stage -->
-      <div class="hero-right" data-reveal data-reveal-delay="2">
-    <img src="./src/assets/img/mascote1.png" alt="Mascote do Departamento de Programação de Jogos Digitais">
-        <!-- COLOCAR FOTO DO MASCOTE-->
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== SERVIÇOS ===== -->
-<section id="svc">
-  <div class="bg-grid fade-out"></div>
-  <div class="container">
-    <div class="section-head center" data-reveal>
-      <span class="subtitulo">O que fazemos</span>
-      <h2 class="section-titulo">Soluções Digitais<span class="c">Completas</span></h2>
-      <p class="section-subtitulo">Do conceito ao lançamento, entregamos produtos digitais que
-performam, encantam e escalam</p>
-    </div>
-    <div class="svc-grid">
-
-      <div class="svc-card" data-reveal>
-        <div class="svc-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--purple-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        </div>
-        <div class="svc-titulo">Desenvolvimento Web</div>
-        <div class="svc-desc">Sites e landing pages de alta performance, com design premium e otimização para conversão e SEO.</div>
-        <div class="svc-tags"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">TypeScript</span></div>
-      </div>
-
-      <div class="svc-card" data-reveal data-reveal-delay="1">
-        <div class="svc-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--purple-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m10 13-2 2 2 2M14 13l2 2-2 2"/></svg>
-        </div>
-        <div class="svc-titulo">Desemvolvimento de Jogos</div>
-        <div class="svc-desc">Jogos 2D e 3D para desktop, mobile e navegador. Experiências interativas únicas que engajam.</div>
-        <div class="svc-tags"><span class="tag">Node.js</span><span class="tag">ASP.NET</span><span class="tag">PostgreSQL</span></div>
-      </div>
-
-      <div class="svc-card" data-reveal data-reveal-delay="2">
-        <div class="svc-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--purple-deep)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-        </div>
-        <div class="svc-titulo">Desenvolvimento Mobile</div>
-        <div class="svc-desc">Jogos 2D/3D, games mobile, experiências interativas e simulações com engines de ponta.</div>
-        <div class="svc-tags"><span class="tag">Unity</span><span class="tag">Godot</span><span class="tag">Unreal</span></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== SOBRE ===== -->
-<section id="sobre">
-  <div class="bg-grid"></div>
-  <div class="container sobre-grid">
-
-      <div class="sobre-card-badge">
-        <div class="label">Projetos entregues</div>
-        <div class="valor">50+</div>
-      </div>
-    </div>
-
-    <div data-reveal data-reveal-delay="1">
-      <span class="subtitulo">Sobre Nós</span>
-      <h2 class="section-titulo">Onde Engenharia<br><span class="c">encontra criatividade</span></h2>
-      <p class="section-subtitulo">
-       Acreditamos que tecnologia deve ser bonita, funcional e divertida. Por isso, cada projeto que assumimos recebe atenção máxima aos detalhes, desde a arquitetura até o pixel perfeito na interface.
-      </p>
-      <div class="sobre-pillars">
-        <div class="pillar" data-reveal data-reveal-delay="2">
-          <div class="pillar-icon">⚙️</div>
-          <div class="pillar-titulo">Tecnologia Séria</div>
-          <div class="pillar-desc">Código limpo, arquitetura escalável e boas práticas em cada projeto.</div>
-        </div>
-        <div class="pillar" data-reveal data-reveal-delay="3">
-          <div class="pillar-icon">🎮</div>
-          <div class="pillar-titulo">Alma de Game Dev</div>
-          <div class="pillar-desc">Cada produto deve ser tão polido quanto um jogo bem acabado.</div>
-        </div>
-        <div class="pillar" data-reveal data-reveal-delay="2">
-          <div class="pillar-icon">🤝</div>
-          <div class="pillar-titulo">Parceria Real</div>
-          <div class="pillar-desc">Trabalhamos junto ao cliente, não apenas para o cliente.</div>
-        </div>
-        <div class="pillar" data-reveal data-reveal-delay="3">
-          <div class="pillar-icon">🚀</div>
-          <div class="pillar-titulo">Entrega que Importa</div>
-          <div class="pillar-desc">Focamos em resultados mensuráveis, não só em beleza visual.</div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- ===== TECNOLOGIAS ===== -->
-<section id="tech">
-  <div class="container">
-    <div class="section-head center" data-reveal>
-      <span class="eyebrow">Nosso Arsenal</span>
-      <h2 class="section-title">Tecnologias que <span class="c">dominamos</span></h2>
-    </div>
-    <div class="tech-grid">
-      <div class="tech-item" data-reveal><div class="tech-logo"><img src="" alt="React"></div><div class="tech-name">React</div></div>
-      <div class="tech-item" data-reveal data-reveal-delay="1"><div class="tech-logo"><img src="" alt="Next.js"></div><div class="tech-name">Next.js</div></div>
-      <div class="tech-item" data-reveal data-reveal-delay="2"><div class="tech-logo"><img src="" alt="TypeScript"></div><div class="tech-name">JavaScript</div></div>
-      <div class="tech-item" data-reveal data-reveal-delay="3"><div class="tech-logo"><img src="" alt="Node.js"></div><div class="tech-name">Node.js</div></div>
-      <div class="tech-item" data-reveal data-reveal-delay="4"><div class="tech-logo"><img src="" alt="ASP.NET"></div><div class="tech-name">ASP.NET</div></div>
-      <div class="tech-item" data-reveal data-reveal-delay="5"><div class="tech-logo"><img src="" alt="Python"></div><div class="tech-name">HTML</div></div>
-      <div class="tech-item" data-reveal><div class="tech-logo"><img src="" alt="Unity"></div><div class="tech-name">Unity</div></div>
-      <div class="tech-item" data-reveal data-reveal-delay="2"><div class="tech-logo"><img src="" alt="Unreal Engine"></div><div class="tech-name">CorelDraw</div></div>
-      <div class="tech-item" data-reveal data-reveal-delay="3"><div class="tech-logo"><img src="" alt="PostgreSQL"></div><div class="tech-name">MySQL</div></div>
-      <div class="tech-item" data-reveal data-reveal-delay="4"><div class="tech-logo"><img src="" alt="Docker"></div><div class="tech-name">Blender</div></div>
-      <div class="tech-item" data-reveal data-reveal-delay="5"><div class="tech-logo"><img src="" alt="Firebase"></div><div class="tech-name">CSS</div></div>
-    </div>
-  </div>
-</section>
- 
-<!-- ===== AVALIAÇÕES ===== -->
-<section id="aval" class="bg-paper">
-  <div class="container">
-    <div class="section-head center" data-reveal>
-      <span class="subtitulo">Clientes</span>
-      <h2 class="section-titulo">O que dizem <span class="c">sobre nós</span></h2>
-    </div>
-    <div class="aval-grid">
- 
-      <div class="aval-card" data-reveal>
-        <div class="aval-aspas">"</div>
-        <div class="aval-estrelas">★★★★★</div>
-        <p class="aval-text">A Mechanical Bromance entregou nosso sistema muito acima do esperado. A atenção aos detalhes e a qualidade do código são de outro nível. Recomendo sem hesitar.</p>
-        <div class="aval-autor">
-          <div class="aval-avatar"><img src="" alt="Ricardo Mendes"></div>
-          <div>
-            <div class="aval-nome">Ricardo Mendes</div>
-            <div class="aval-cargo">CEO · TechBridge Solutions</div>
-          </div>
-        </div>
-      </div>
- 
-      <div class="aval-card" data-reveal data-reveal-delay="1">
-        <div class="aval-aspas">"</div>
-        <div class="aval-estrelas">★★★★★</div>
-        <p class="aval-text">Precisávamos de um jogo educativo no prazo impossível. Eles não só entregaram a tempo como superaram as expectativas dos nossos usuários. Parceiros de verdade.</p>
-        <div class="aval-autor">
-          <div class="aval-avatar"><img src="" alt="Ana Beatriz Lima"></div>
-          <div>
-            <div class="aval-nome">Ana Beatriz Lima</div>
-            <div class="aval-cargo">Diretora de Produto · EduPlay</div>
-          </div>
-        </div>
-      </div>
- 
-      <div class="aval-card" data-reveal data-reveal-delay="2">
-        <div class="aval-aspas">"</div>
-        <div class="aval-estrelas">★★★★★</div>
-        <p class="aval-text">Nossa landing page nova converteu 3x mais desde o lançamento. Design impecável, carregamento absurdamente rápido. Valeu cada centavo investido.</p>
-        <div class="aval-autor">
-          <div class="aval-avatar"><img src="" alt="Felipe Corrêa"></div>
-          <div>
-            <div class="aval-nome">Felipe Corrêa</div>
-            <div class="aval-cargo">Fundador · DropBrand</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<!-- ===== FAQ ===== -->
-<section id="faq">
-  <div class="container">
-    <div class="section-head center" data-reveal>
-      <span class="eyebrow">Dúvidas frequentes</span>
-      <h2 class="section-title">Perguntas <span class="c">comuns</span></h2>
-    </div>
-    <div class="faq-list" data-reveal>
- 
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          Qual o prazo médio de um projeto?
-          <span class="faq-arrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-          </span>
-        </button>
-        <div class="faq-a">Depende da complexidade. Landing pages: 2–4 semanas. Sistemas completos: 2–6 meses. Fazemos um briefing detalhado antes de fechar qualquer prazo.</div>
-      </div>
- 
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          Vocês trabalham com clientes de qualquer segmento?
-          <span class="faq-arrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-          </span>
-        </button>
-        <div class="faq-a">Sim! Atendemos startups, empresas estabelecidas, criadores de conteúdo e projetos independentes. O que importa é que o projeto exija qualidade.</div>
-      </div>
- 
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          Como funciona o processo de pagamento?
-          <span class="faq-arrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-          </span>
-        </button>
-        <div class="faq-a">Geralmente trabalhamos com 50% no início e 50% na entrega final. Para projetos longos, criamos um plano de pagamento por milestone. Aceitamos PIX, transferência e cartão.</div>
-      </div>
- 
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          Vocês oferecem manutenção após o lançamento?
-          <span class="faq-arrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-          </span>
-        </button>
-        <div class="faq-a">Sim. Oferecemos planos de suporte mensal com SLA definido, incluindo correções, atualizações de segurança e evoluções incrementais do produto.</div>
-      </div>
- 
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          Posso acompanhar o desenvolvimento em tempo real?
-          <span class="faq-arrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-          </span>
-        </button>
-        <div class="faq-a">Absolutamente. Usamos ferramentas de gestão como Notion e Linear, com reuniões semanais de alinhamento e acesso a um ambiente de preview atualizado continuamente.</div>
-      </div>
- 
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          Desenvolvem games para qual plataforma?
-          <span class="faq-arrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-          </span>
-        </button>
-        <div class="faq-a">PC, Mobile (iOS/Android), Web e Console. Trabalhamos com Unity, Godot e Unreal Engine, escolhendo a melhor opção conforme o tipo de jogo e orçamento do projeto.</div>
-      </div>
- 
-    </div>
-  </div>
-</section>
- 
-<!-- ===== CONTATO ===== -->
-<section id="contato" class="bg-paper">
-  <div class="container">
-    <div class="contato-wrap">
- 
-      <div class="contato-info" data-reveal>
-        <span class="subtitulo">Contato</span>
-        <h2 class="section-titulo">Vamos <span class="c">construir</span><br>algo incrível</h2>
-        <p class="section-subtitulo">Preencha o formulário ou nos chame diretamente. Respondemos em até 24h.</p>
-        <div class="contato-canais">
-          <a href="https://wa.me/5511999999999" class="channel" target="_blank" rel="noopener">
-            <div class="canal-icon"><img src="" alt="WhatsApp"></div>
-            <div>
-              <div class="canal-label">WhatsApp</div>
-              <div class="canal-valor">+55 (11) 9 9999-9999</div>
+          <div class="hero__estatisticas">
+            <div class="estatistica">
+              <strong>50+</strong>
+              <span>Projetos Entregues</span>
             </div>
-          </a>
-          <a href="mailto:contato@mechanicalbromance.com" class="channel">
-            <div class="canal-icon"><img src="" alt="E-mail"></div>
-            <div>
-              <div class="canal-label">E-mail</div>
-              <div class="canal-valor">contato@mechanicalbromance.com</div>
+            <div class="estatistica">
+              <strong>98%</strong>
+              <span>Satisfação dos Clientes</span>
             </div>
-          </a>
-          <div class="canal">
-            <div class="canal-icon"><img src="" alt="Localização"></div>
-            <div>
-              <div class="canal-label">Localização</div>
-              <div class="canal-valor">Brasil — Remoto &amp; Presencial</div>
+            <div class="estatistica">
+              <strong>5★</strong>
+              <span>Avaliação Média</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__imagem">
+          <!-- IMAGEM DO ROBÔ: substituir pelo arquivo final -->
+          <div><img src="./src/assets/robo1.png"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVIÇOS ===================== -->
+    <section id="servicos" class="secao servicos">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <span class="etiqueta">O que fazemos</span>
+          <h2>Soluções digitais completas</h2>
+          <p>Do conceito ao lançamento, entregamos produtos digitais que performam, encantam e escalam.</p>
+        </div>
+
+        <div class="grade grade--3">
+          <article class="cartao-servico">
+            <div class="cartao-servico__icone" aria-hidden="true">🌐</div>
+            <h3>Desenvolvimento Web</h3>
+            <p>Sites e landing pages de alta performance, com design premium e otimização para conversão e SEO.</p>
+            <ul class="lista-tags">
+              <li>React</li><li>Next.js</li><li>TypeScript</li>
+            </ul>
+          </article>
+
+          <article class="cartao-servico">
+            <div class="cartao-servico__icone" aria-hidden="true">🎮</div>
+            <h3>Desenvolvimento de Jogos</h3>
+            <p>Jogos 2D e 3D para desktop, mobile e navegador. Experiências interativas únicas que engajam.</p>
+            <ul class="lista-tags">
+              <li>Unity</li><li>Unreal</li><li>Godot</li>
+            </ul>
+          </article>
+
+          <article class="cartao-servico">
+            <div class="cartao-servico__icone" aria-hidden="true">📱</div>
+            <h3>Desenvolvimento Mobile</h3>
+            <p>Aplicativos móveis de alta performance, com design premium e otimização para conversão e experiência.</p>
+            <ul class="lista-tags">
+              <li>React Native</li><li>Swift</li><li>Kotlin</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section id="sobre" class="secao sobre">
+      <div class="container sobre__conteudo">
+        <div class="sobre__imagem">
+          <!-- IMAGEM DO ROBÔ: substituir pelo arquivo final -->
+          <img src="./src/assets/robo2.png">
+        </div>
+
+        <div class="sobre__texto">
+          <span class="etiqueta">Sobre nós</span>
+          <h2>Onde engenharia encontra criatividade</h2>
+          <p>
+            Somos um estúdio de software apaixonado por criar produtos digitais
+            que fazem a diferença. Nossa equipe combina expertise técnica com
+            sensibilidade criativa para entregar soluções que performam e
+            encantam.
+          </p>
+          <p>
+            Acreditamos que tecnologia deve ser bonita, funcional e divertida.
+            Por isso, cada projeto que assumimos recebe atenção máxima aos
+            detalhes, desde a arquitetura até o pixel perfeito na interface.
+          </p>
+
+          <div class="grade grade--2 sobre__destaques">
+            <div class="destaque-item">
+              <span class="destaque-item__icone" aria-hidden="true">🚀</span>
+              <div>
+                <h4>Entrega Rápida</h4>
+                <p>Processos ágeis para resultados no prazo combinado.</p>
+              </div>
+            </div>
+            <div class="destaque-item">
+              <span class="destaque-item__icone" aria-hidden="true">🔬</span>
+              <div>
+                <h4>Tecnologia Atual</h4>
+                <p>Stack moderna, atualizada e voltada para o futuro.</p>
+              </div>
+            </div>
+            <div class="destaque-item">
+              <span class="destaque-item__icone" aria-hidden="true">♾️</span>
+              <div>
+                <h4>Suporte Contínuo</h4>
+                <p>Suporte pós-entrega para garantir que tudo funcione.</p>
+              </div>
+            </div>
+            <div class="destaque-item">
+              <span class="destaque-item__icone" aria-hidden="true">🤝</span>
+              <div>
+                <h4>Parceria Real</h4>
+                <p>Construímos parcerias reais baseadas em confiança, transparência e resultados.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
- 
-      <div data-reveal data-reveal-delay="1">
-        <form class="contato-form" onsubmit="handleForm(event)" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" for="cf-name">Nome</label>
-              <input class="form-input" id="cf-name" type="text" placeholder="Seu nome" required>
+    </section>
+
+    <!-- ===================== PROJETOS EM DESTAQUE ===================== -->
+    <section id="portfolio" class="secao portfolio">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <span class="etiqueta">Nosso trabalho</span>
+          <h2>Projetos em destaque</h2>
+          <p>Uma seleção dos nossos trabalhos mais recentes e impactantes.</p>
+        </div>
+
+        <div class="grade grade--3" id="listaProjetos">
+          <!-- Os cartões de projeto são gerados também via JS em script.js (array projetos) -->
+          <article class="cartao-projeto">
+            <div class="cartao-projeto__icone cartao-projeto__icone--soundwave" aria-hidden="true">
+              <img src="./src/assets/projetosdestaque.png" alt="">
             </div>
-            <div class="form-group">
-              <label class="form-label" for="cf-email">E-mail</label>
-              <input class="form-input" id="cf-email" type="email" placeholder="seu@email.com" required>
+            <h3>SoundWave</h3>
+            <p>Um site de streaming dedicado exclusivamente a trilhas sonoras de jogos</p>
+          </article>
+
+           <article class="cartao-projeto">
+            <div class="cartao-projeto__icone cartao-projeto__icone--google" aria-hidden="true">
+              <img src="./src/assets/logoPomoTransparente.png">
             </div>
+            <h3>Pomo de Éris</h3>
+            <p>Pomo de Éris é uma clínica de estética que une beleza</p>
+          </article>
+
+          <article class="cartao-projeto">
+            <div class="cartao-projeto__icone cartao-projeto__icone--google" aria-hidden="true">
+              <img src="./src/assets/destaque2.png">
+            </div>
+            <h3>Projeto SAW</h3>
+            <p>Bem-vindo à nossa fan page dedicada ao universo de Jigsaw!   </p>
+          </article>
+
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== POR QUE NÓS ===================== -->
+    <section class="secao diferenciais">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <span class="etiqueta">Por que nós?</span>
+          <h2>A diferença que importa</h2>
+        </div>
+
+        <div class="grade grade--3">
+          <article class="cartao-diferencial">
+            <div class="cartao-diferencial__icone" aria-hidden="true">⚡</div>
+            <h3>Tecnologias Modernas</h3>
+            <p>Usamos o que há de mais atual no mercado para garantir performance, segurança e escalabilidade em cada projeto.</p>
+          </article>
+          <article class="cartao-diferencial">
+            <div class="cartao-diferencial__icone" aria-hidden="true">🎯</div>
+            <h3>Performance Máxima</h3>
+            <p>Sites rápidos, sistemas otimizados e jogos fluidos. Performance não é opcional, é padrão em tudo que entregamos.</p>
+          </article>
+          <article class="cartao-diferencial">
+            <div class="cartao-diferencial__icone" aria-hidden="true">✨</div>
+            <h3>Código Limpo</h3>
+            <p>Código bem documentado, testado e fácil de manter. Você recebe algo que pode evoluir com o tempo.</p>
+          </article>
+          <article class="cartao-diferencial">
+            <div class="cartao-diferencial__icone" aria-hidden="true">📐</div>
+            <h3>Arquitetura Escalável</h3>
+            <p>Sistemas que crescem junto com o seu negócio. Projetados para escalar sem reescrever do zero.</p>
+          </article>
+          <article class="cartao-diferencial">
+            <div class="cartao-diferencial__icone" aria-hidden="true">🎨</div>
+            <h3>Engenharia Criativa</h3>
+            <p>A combinação única de habilidades técnicas e sensibilidade criativa que resulta em produtos diferenciados.</p>
+          </article>
+          <article class="cartao-diferencial">
+            <div class="cartao-diferencial__icone" aria-hidden="true">🛡️</div>
+            <h3>Suporte Contínuo</h3>
+            <p>Parceria de longo prazo. Continuamos ao seu lado após o lançamento para garantir o sucesso do produto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEÇÃO DAS TECNOLOGIAS QUE DOMINAMOS ===================== -->
+    <section class="secao stack">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <span class="etiqueta">Stack tecnológica</span>
+          <h2>Tecnologias que dominamos</h2>
+        </div>
+
+        <div class="faixa-tecnologias">
+          <ul class="lista-tecnologias" id="listaTecnologias">
+            <!-- Itens gerados via JS a partir do array "tecnologias" em script.js -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DEPOIMENTOS ===================== -->
+    <section class="secao depoimentos">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <span class="etiqueta">Clientes</span>
+          <h2>O que dizem sobre nós</h2>
+          <p>A opinião de quem já trabalhou com a Mechanical Bromance.</p>
+        </div>
+
+        <div class="grade grade--3">
+          <div class="cartao-depoimento">
+            <div class="estrelas" aria-label="5 de 5 estrelas">★★★★★</div>
+            <p>“O resultado superou todas as minhas expectativas. O site ficou incrível, carrega rápido e as conversões aumentaram 40% no primeiro mês.”</p>
+            <footer>
+              <span class="avatar" aria-hidden="true">C</span>
+              <div>
+                <cite>Leonardo Durigam</cite>
+                <span>Diretor, Adibas</span>
+              </div>
+            </footer>
           </div>
-          <div class="form-group">
-            <label class="form-label" for="cf-type">Tipo de projeto</label>
-            <select class="form-select" id="cf-type">
-              <option value="">Selecione...</option>
-              <option>Website</option>
-              <option>Aplicação Web / Sistema</option>
-              <option>Jogo / Gameficação</option>
-    
-            </select>
+
+          <div class="cartao-depoimento">
+            <div class="estrelas" aria-label="5 de 5 estrelas">★★★★★</div>
+            <p>“Desenvolveram nosso sistema de gestão do zero. Profissionalismo, comunicação clara e entrega no prazo. Parceiros para a vida toda.”</p>
+            <footer>
+              <span class="avatar" aria-hidden="true">A</span>
+              <div>
+                <cite>Ana Paula Costa</cite>
+                <span>Diretora, Grupo Atlas</span>
+              </div>
+            </footer>
           </div>
-          <div class="form-group">
-            <label class="form-label" for="cf-msg">Conte sobre seu projeto</label>
-            <textarea class="form-textarea" id="cf-msg" placeholder="Qual problema você quer resolver? Qual é a visão?" required></textarea>
+
+          <div class="cartao-depoimento">
+            <div class="estrelas" aria-label="5 de 5 estrelas">★★★★★</div>
+            <p>“Nosso jogo foi desenvolvido com uma qualidade técnica impecável. A equipe entende tanto de game design quanto de engenharia. Raro encontrar isso.”</p>
+            <footer>
+              <span class="avatar" aria-hidden="true">R</span>
+              <div>
+                <cite>Rafael Lima</cite>
+                <span>Indie Game Developer</span>
+              </div>
+            </footer>
           </div>
-          <button type="submit" class="btn btn-primary">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2 15 22l-4-9-9-4 20-7z"/></svg>
-            Enviar Mensagem
-          </button>
-          <p id="form-success">✅ Mensagem enviada! Retornaremos em breve.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PERGUNTAS ===================== -->
+    <section class="secao faq">
+      <div class="container faq__conteudo">
+        <div class="faq__lista">
+          <span class="etiqueta">Dúvidas frequentes</span>
+          <h2>FAQ</h2>
+
+          <div class="acordeao" id="listaFaq">
+            <!-- Cada item usa <details>/<summary>, que já funciona sem JS -->
+            <details class="item-faq">
+              <summary>Quanto tempo leva para desenvolver um site?</summary>
+              <p>O prazo varia conforme a complexidade do projeto, mas em geral entregamos sites institucionais em 2 a 4 semanas e sistemas mais robustos em 6 a 12 semanas.</p>
+            </details>
+
+            <details class="item-faq">
+              <summary>Vocês trabalham com clientes de qualquer tamanho?</summary>
+              <p>Sim! Atendemos desde criadores independentes até empresas de médio e grande porte, adaptando o processo ao orçamento e à escala de cada projeto.</p>
+            </details>
+
+            <details class="item-faq">
+              <summary>Como funciona o suporte após o lançamento?</summary>
+              <p>Oferecemos planos de suporte contínuo com monitoramento, correções e pequenas melhorias, garantindo que tudo continue funcionando perfeitamente.</p>
+            </details>
+
+            <details class="item-faq">
+              <summary>Quais tecnologias vocês usam para jogos?</summary>
+              <p>Trabalhamos principalmente com Unity, Unreal Engine e Godot, escolhendo a ferramenta ideal conforme a plataforma e os objetivos do projeto.</p>
+            </details>
+
+            <details class="item-faq">
+              <summary>Consigo ver o progresso do meu projeto durante o desenvolvimento?</summary>
+              <p>Sim, mantemos comunicação constante com entregas parciais e atualizações periódicas para que você acompanhe cada etapa.</p>
+            </details>
+          </div>
+        </div>
+
+        <div class="faq__imagem">
+          <!-- IMAGEM DO ROBÔ: substituir pelo arquivo final -->
+           <img src="./src/assets/robo3.png">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO  ===================== -->
+    <section id="contato" class="secao contato">
+      <div class="container cartao-contato">
+        <div class="cartao-contato__texto">
+          <span class="etiqueta etiqueta--clara">Disponível para novos projetos</span>
+          <h2>Vamos construir algo incrível?</h2>
+          <p>Conta pra gente sobre seu projeto. Em até 24h nossa equipe entra em contato para um papo sem compromisso.</p>
+
+          <ul class="lista-contato">
+            <li>💬 WhatsApp: (11) 99999-0000</li>
+            <li>✉️ oi@mechanicalbromance.com</li>
+            <li>📍 São Paulo, Brasil — Atendemos o mundo</li>
+          </ul>
+        </div>
+
+        <form class="formulario-contato" id="formularioContato" novalidate>
+          <label class="campo-oculto" for="nome">Seu nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+          <label class="campo-oculto" for="email">Seu e-mail</label>
+          <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+          <label class="campo-oculto" for="tipoProjeto">Tipo de projeto</label>
+          <input type="text" id="tipoProjeto" name="tipoProjeto" placeholder="Tipo de projeto (site, jogo, sistema...)">
+
+          <label class="campo-oculto" for="mensagem">Conta mais sobre sua ideia</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conta mais sobre sua ideia..." required></textarea>
+
+          <button type="submit" class="botao botao--primario botao--grande">Enviar Mensagem 🚀</button>
+
+          <!-- Mensagem de status exibida após o envio (controlada via script.js) -->
+          <p class="mensagem-status" id="mensagemStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
- 
-    </div>
-  </div>
-</section>
- 
-<!-- ===== FOOTER ===== -->
-<footer>
-  <div class="container">
-    <div class="footer-inner">
-        <p>Transdormamos ideias em protudos digitais de alto nível. Sites, sistemas,jogos e experiências que fazerm diferença.</p>
-        <div class="footer-socials">
-          <a href="#" class="social-btn" aria-label="Instagram"><img src="" alt="Instagram"></a>
-          <a href="#" class="social-btn" aria-label="LinkedIn"><img src="" alt="LinkedIn"></a>
-          <a href="#" class="social-btn" aria-label="GitHub"><img src="" alt="GitHub"></a>
-        </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="rodape">
+    <div class="container rodape__conteudo">
+      <div class="rodape__sobre">
+        <p>Transformamos ideias em produtos digitais de alto nível. Sites, sistemas, jogos e experiências que fazem diferença.</p>
       </div>
-      <div class="footer-col">
+
+      <div class="rodape__coluna">
         <h4>Serviços</h4>
-        <ul>
-          <li><a href="#services">Desenvolvimento Web</a></li>
-          <li><a href="#services">Jogos</a></li>
-     
-        </ul>
+        <a href="#servicos">Desenvolvimento Web</a>
+        <a href="#servicos">Jogos</a>
       </div>
-      <div class="footer-col">
+
+      <div class="rodape__coluna">
         <h4>Empresa</h4>
-        <ul>
-          <li><a href="#about">Sobre Nós</a></li>
-          <li><a href="#portfolio">Portfólio</a></li>
-        </ul>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
       </div>
-      <div class="footer-col">
+
+      <div class="rodape__coluna">
         <h4>Contato</h4>
-        <ul>
-          <li><a href="mailto:contato@mechanicalbromance.com">E-mail</a></li>
-          <li><a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a></li>
-          <li><a href="https://www.instagram.com/mechanicalbromance/" target="_blank" rel="noopener">Instagram</a></li>
-        </ul>
+        <a href="#contato">WhatsApp</a>
+        <a href="#contato">E-mail</a>
+        <a href="#contato">Instagram</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="footer-copy">© 2025 Mechanical Bromance. Todos os direitos reservados.</div>
+
+    <div class="rodape__base">
+      <p>© 2026 Mechanical Bromance. Todos os direitos reservados.</p>
     </div>
-  </div>
-</footer>
+  </footer>
 
+  <!-- Botão "voltar ao topo", exibido via JS após rolagem -->
+  <button id="botaoVoltarTopo" class="botao-voltar-topo" aria-label="Voltar ao topo">↑</button>
 
-
-
+  <script src="./src/js/script.js"></script>
 </body>
-</html>     
+</html>
