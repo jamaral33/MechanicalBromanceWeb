@@ -347,3 +347,182 @@ summary:focus-visible {
   aspect-ratio: 1 / 1;
   max-height: 320px;
 }
+
+/* ---------- Cartões de serviço ---------- */
+.cartao-servico {
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-borda);
+  padding: 32px;
+  box-shadow: var(--sombra-cartao);
+}
+
+.cartao-servico__icone {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--raio-borda-pequeno);
+  background-color: var(--cor-roxo-claro);
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.cartao-servico h3 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+.cartao-servico p {
+  color: var(--cor-texto-suave);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.lista-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.lista-tags li {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--cor-roxo);
+  background-color: var(--cor-roxo-claro);
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+/* ---------- Seção Sobre ---------- */
+.sobre__conteudo {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.sobre__texto p {
+  color: var(--cor-texto-suave);
+  margin-block: 16px;
+}
+
+.sobre__destaques {
+  margin-top: 32px;
+}
+
+.destaque-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.destaque-item__icone {
+  font-size: 1.3rem;
+}
+
+.destaque-item h4 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.destaque-item p {
+  font-size: 0.88rem;
+  color: var(--cor-texto-suave);
+  margin: 0;
+}
+
+/* ---------- Projetos em destaque ---------- */
+.portfolio {
+  background-color: #F8F7FC;
+}
+
+.portfolio .cabecalho-secao {
+  margin-bottom: 64px;
+}
+
+.portfolio .cabecalho-secao .etiqueta {
+  position: relative;
+  color: var(--cor-roxo);
+  background: none;
+  padding: 0 0 0 34px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.portfolio .cabecalho-secao .etiqueta::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 1px;
+  background-color: var(--cor-roxo);
+}
+
+.portfolio .grade {
+  grid-template-columns: repeat(3, minmax(0, 188px));
+  justify-content: space-between;
+  max-width: 896px;
+  margin-inline: auto;
+  gap: 24px;
+}
+
+.cartao-projeto {
+  border: 2px solid var(--cor-roxo);
+  border-radius: 48px;
+  min-height: 290px;
+  padding: 24px 14px 22px;
+  text-align: center;
+  background-color: var(--cor-fundo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartao-projeto__icone {
+  width: 100%;
+  height: 82px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-roxo);
+  font-family: var(--fonte-titulo);
+  font-size: 4.8rem;
+  line-height: 1;
+}
+
+.cartao-projeto__icone img {
+  width: 116px;
+  height: 82px;
+  object-fit: contain;
+}
+
+.cartao-projeto__icone--google {
+  color: #4285F4;
+  font-family: Arial, sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.cartao-projeto__icone--sunburst {
+  color: #D97757;
+  font-size: 5.5rem;
+  transform: rotate(15deg);
+}
+
+.cartao-projeto h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.cartao-projeto p {
+  font-family: Georgia, serif;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--cor-texto);
+}
