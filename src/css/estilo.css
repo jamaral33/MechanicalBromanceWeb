@@ -796,3 +796,80 @@ summary:focus-visible {
   font-size: 0.92rem;
 }
 
+/* Seção de contatos da mechanical */
+.secao.contato {
+  padding-block: 96px 120px;
+}
+
+.cartao-contato {
+  background: var(--gradiente-roxo);
+  border-radius: 28px;
+  padding: 56px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  color: #FFFFFF;
+}
+
+.cartao-contato__texto h2 {
+  color: #FFFFFF;
+  margin-block: 14px;
+}
+
+.cartao-contato__texto p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 24px;
+}
+
+.lista-contato li {
+  font-size: 0.92rem;
+  margin-bottom: 10px;
+}
+
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #FFFFFF;
+  border-radius: var(--raio-borda);
+  padding: 28px;
+}
+
+.campo-oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  width: 100%;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-borda-pequeno);
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 0.92rem;
+  color: var(--cor-texto);
+}
+
+.formulario-contato input:focus,
+.formulario-contato textarea:focus {
+  border-color: var(--cor-roxo);
+}
+
+.formulario-contato .botao {
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.mensagem-status {
+  font-size: 0.85rem;
+  text-align: center;
+  color: var(--cor-roxo);
+  min-height: 1.2em;
+}
+
+
+
