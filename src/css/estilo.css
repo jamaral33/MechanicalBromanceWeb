@@ -921,5 +921,30 @@ summary:focus-visible {
   padding-block: 24px;
   font-size: 0.82rem;
 }
+/* Botão para voltar ao topo */
+.botao-voltar-topo {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--gradiente-roxo);
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 18px rgba(109, 40, 217, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+.botao-voltar-topo.visivel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 
 
