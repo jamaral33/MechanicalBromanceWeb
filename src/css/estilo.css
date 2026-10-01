@@ -871,5 +871,55 @@ summary:focus-visible {
   min-height: 1.2em;
 }
 
+/* Finalizando */
+.rodape {
+  background-color: #17101F;
+  color: rgba(255, 255, 255, 0.75);
+  padding-top: 64px;
+}
+
+.rodape__conteudo {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, 1fr);
+  gap: 32px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo--rodape {
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+.rodape__sobre p {
+  font-size: 0.88rem;
+  max-width: 34ch;
+}
+
+.rodape__coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rodape__coluna h4 {
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.rodape__coluna a {
+  font-size: 0.88rem;
+}
+
+.rodape__coluna a:hover {
+  color: #FFFFFF;
+}
+
+.rodape__base {
+  text-align: center;
+  padding-block: 24px;
+  font-size: 0.82rem;
+}
 
 
