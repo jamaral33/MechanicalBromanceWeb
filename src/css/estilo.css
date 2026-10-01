@@ -743,3 +743,56 @@ summary:focus-visible {
   font-size: 0.8rem;
   color: var(--cor-texto-suave);
 }
+
+/* ---------- FAQ ---------- */
+.faq__conteudo {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.acordeao {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item-faq {
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-borda-pequeno);
+  padding: 18px 20px;
+}
+
+.item-faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.item-faq summary::after {
+  content: '+';
+  font-size: 1.2rem;
+  color: var(--cor-roxo);
+  transition: transform 0.2s ease;
+}
+
+.item-faq[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.item-faq p {
+  margin-top: 12px;
+  color: var(--cor-texto-suave);
+  font-size: 0.92rem;
+}
+
