@@ -948,3 +948,39 @@ summary:focus-visible {
 
 
 
+
+  /* RESPONSIVIDADE*/
+  
+
+@media (max-width: 960px) {
+  .hero__conteudo,
+  .sobre__conteudo,
+  .faq__conteudo,
+  .cartao-contato {
+    grid-template-columns: 1fr;
+  }
+
+
+  .sobre__imagem,
+  .faq__imagem {
+    order: -1;
+    max-width: 320px;
+    margin-inline: auto;
+  }
+
+  
+  .grade--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio .grade {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: none;
+  }
+
+  .rodape__conteudo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
