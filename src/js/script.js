@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   inicializarMenuMobile();
+  inicializarBotaoVoltarTopo();
 });
 
 /* ---------------------------------------------------------
@@ -22,5 +23,27 @@ function inicializarMenuMobile() {
       navegacaoMobile.classList.remove('aberto');
       botaoMenu.setAttribute('aria-expanded', 'false');
     });
+  });
+}
+
+/* ---------------------------------------------------------
+   Botão "voltar ao topo": aparece após rolar a página
+   --------------------------------------------------------- */
+function inicializarBotaoVoltarTopo() {
+  const botaoVoltarTopo = document.getElementById('botaoVoltarTopo');
+  if (!botaoVoltarTopo) return;
+
+  const LIMITE_ROLAGEM = 400; // pixels rolados para exibir o botão
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > LIMITE_ROLAGEM) {
+      botaoVoltarTopo.classList.add('visivel');
+    } else {
+      botaoVoltarTopo.classList.remove('visivel');
+    }
+  });
+
+  botaoVoltarTopo.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
