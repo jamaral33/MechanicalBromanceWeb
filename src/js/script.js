@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   inicializarMenuMobile();
   inicializarBotaoVoltarTopo();
   inicializarListaTecnologias();
+  inicializarFormularioContato();
 });
 
 /* ---------------------------------------------------------
@@ -108,4 +109,32 @@ function inicializarListaTecnologias() {
   });
 
   lista.classList.add('lista-tecnologias--animada');
+}
+
+/* ---------------------------------------------------------
+   Formulário de contato
+   --------------------------------------------------------- */
+function inicializarFormularioContato() {
+  const formulario = document.getElementById('formularioContato');
+  const mensagemStatus = document.getElementById('mensagemStatus');
+
+  if (!formulario || !mensagemStatus) return;
+
+  formulario.addEventListener('submit', (evento) => {
+    evento.preventDefault();
+
+    const nome = formulario.nome.value.trim();
+    const email = formulario.email.value.trim();
+    const mensagem = formulario.mensagem.value.trim();
+
+    if (!nome || !email || !mensagem) {
+      mensagemStatus.textContent = 'Por favor, preencha nome, e-mail e mensagem.';
+      mensagemStatus.style.color = '#D14343';
+      return;
+    }
+
+    mensagemStatus.textContent = 'Mensagem enviada! Em breve entraremos em contato. 🚀';
+    mensagemStatus.style.color = '#6D28D9';
+    formulario.reset();
+  });
 }
