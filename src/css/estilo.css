@@ -364,7 +364,6 @@ summary:focus-visible {
   align-items: center;
   justify-content: center;
   border-radius: var(--raio-borda-pequeno);
-  background-color: var(--cor-roxo-claro);
   font-size: 1.4rem;
   margin-bottom: 20px;
 }
@@ -566,6 +565,8 @@ summary:focus-visible {
 .cartao-diferencial__icone {
   font-size: 1.6rem;
   margin-bottom: 14px;
+  height: 50px;
+  width: 50px;
 }
 
 .cartao-diferencial h3 {
