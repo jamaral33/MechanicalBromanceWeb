@@ -424,6 +424,7 @@ summary:focus-visible {
 .destaque-item h4 {
   font-size: 1rem;
   margin-bottom: 4px;
+  color: var(--cor-roxo-escuro);
 }
 
 .destaque-item p {
