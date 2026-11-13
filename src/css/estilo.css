@@ -693,6 +693,8 @@ summary:focus-visible {
     animation: none;
   }
 }
+/* ---------- PARTE DO SITE QUE MOSTRA A FOTO DOS INTEGRANTES DA EQUIPE ---------- */
+
 
 /* ---------- Depoimentos ---------- */
 .cartao-depoimento {
@@ -975,6 +977,10 @@ summary:focus-visible {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .membro {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+
   .portfolio .grade {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     max-width: none;
@@ -1007,6 +1013,14 @@ summary:focus-visible {
   .portfolio .grade {
     grid-template-columns: 1fr;
     max-width: 240px;
+  }
+
+  .secao.equipe {
+    padding-block: 40px;
+  }
+
+  .membro {
+    flex-basis: calc((100% - 16px) / 2);
   }
 
   .hero__estatisticas {

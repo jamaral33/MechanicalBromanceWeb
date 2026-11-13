@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   inicializarMenuMobile();
   inicializarBotaoVoltarTopo();
   inicializarListaTecnologias();
+  inicializarEquipes();
   inicializarFormularioContato();
 });
 
