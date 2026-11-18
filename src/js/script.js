@@ -134,7 +134,7 @@ function inicializarFormularioContato() {
       return;
     }
 
-    mensagemStatus.textContent = 'Mensagem enviada! Em breve entraremos em contato. 🚀';
+    mensagemStatus.textContent = 'Mensagem enviada! Em breve entraremos em contato!';
     mensagemStatus.style.color = '#6D28D9';
     formulario.reset();
   });
