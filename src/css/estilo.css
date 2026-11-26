@@ -637,11 +637,11 @@ summary:focus-visible {
 
 .secao.equipe {
   background-color: var(--cor-fundo-alternativo);
-  padding-block: 64px;
+  padding-block: 40px;
 }
 
 .equipe .cabecalho-secao {
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 
 .equipe .cabecalho-secao h2 {
@@ -649,7 +649,7 @@ summary:focus-visible {
 }
 
 .grupo-equipe + .grupo-equipe {
-  margin-top: 36px;
+  margin-top: 24px;
 }
 
 .grupo-equipe__titulo {
@@ -658,7 +658,7 @@ summary:focus-visible {
   gap: 14px;
   font-size: 1.05rem;
   color: var(--cor-roxo-escuro);
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .grupo-equipe__titulo::before,
@@ -673,7 +673,7 @@ summary:focus-visible {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px 16px;
+  gap: 16px 12px;
 }
 
 .membro {
@@ -682,9 +682,9 @@ summary:focus-visible {
 }
 
 .membro__foto {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 12px;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 8px;
   padding: 4px;
   border-radius: 50%;
   background: var(--gradiente-roxo);
@@ -1044,7 +1044,7 @@ summary:focus-visible {
   }
 
   .secao.equipe {
-    padding-block: 40px;
+    padding-block: 28px;
   }
 
   .membro {
@@ -1052,8 +1052,8 @@ summary:focus-visible {
   }
 
   .membro__foto {
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
   }
 
   .hero__estatisticas {
